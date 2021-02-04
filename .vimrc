@@ -28,6 +28,8 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " Configure vim
+set nocompatible
+filetype plugin on
 syntax enable
 set number
 set relativenumber
@@ -38,4 +40,9 @@ let g:airline_powerline_fonts = 1
 "" Set solarized colours
 set background=dark
 colorscheme solarized
+
+"" Configure VimWiki
+let g:vimwiki_list = [
+			\ { 'path': '~/notes/', 'syntax': 'markdown', 'ext':'.md' },
+			\ ]
 
