@@ -29,6 +29,8 @@ call plug#end()
 
 " Configure vim
 syntax enable
+set number
+set relativenumber
 
 "" Configure airline
 let g:airline_powerline_fonts = 1
